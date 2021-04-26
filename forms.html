@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="message.html", method="POST">
+    <label for="name">Name</label>
+    <input type="text" id = "name" name="name" value="Saurav" required/>
+
+    <label for ="email">Email Id</label>
+    <input type="email" id="email" name="email">
+    
+    <label for="quantty">Quantity</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5" value="2"/>
+
+    <label for ="searchForProducts">Search for Products</label>
+    <input type="search" id= "searchForProducts" name="searchForProducts" />
+    
+    <label>Date :<input type="date" name=start-date min="2019-01-01" max="2021-12-31" /></label> 
+    Password : <input type="password" name =password />
+    
+     <label for="address">Address</label>
+     <textarea id= "address" rows="6"></textarea>
+     
+     <label for="city">City</label>
+     <select id="city" name="city">
+         <option selected value="MUM">MUMBAI</option>
+         <option value="CHE">CHENNAI</option>
+         <option value="KOL">KOLKATTA</option>
+         <option value="BGL">BANGALORE</option>
+         <option value="HYD">HYDERABAD</option>
+     </select>
+
+     <label for="interests">interests</label>
+     <div id="interests">
+         <label><input type="checkbox" name="interests" value="sports" />Sports</label>
+         <label><input type="checkbox" name="interests" value="current affairs" />Current affairs</label>
+         <label><input type="checkbox" name="interests" value="Films" />Films</label>
+         <label><input type="checkbox" name="interests" value="Politics" />Politics</label>
+         <label><input type="checkbox" name="interests" value="Arts" />Arts</label>
+     </div>
+
+     <label for="interests">Special interests</label>
+     <div id="interests">
+         <label><input type="radio" name="interests" value="sports" />Sports</label>
+         <label><input type="radio" name="interests" value="current affairs" checked/>Current affairs</label>
+         <label><input type="radio" name="interests" value="Films" />Films</label>
+         <label><input type="radio" name="interests" value="Politics" />Politics</label>
+         <label><input type="radio" name="interests" value="Arts" />Arts</label>
+     </div>
+
+    <button>Submit</button>
+    <input type="submit" value="Checkout" />
+    <input type="reset" value="Reset All" />
+    </form>
+    <button>General Button</button>
+</body>
+</html>
